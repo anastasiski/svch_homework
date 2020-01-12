@@ -1,0 +1,152 @@
+$lightFontColor: #dddddd
+$darkFontColor: #131313
+$darkBgColor: #1E1E1E
+$firstColor: #FDCA00
+
+*
+    margin: 0
+    padding: 0
+
+html
+    font-size: 10px
+
+body
+    font-size: 1.4rem
+    font-family: 'Roboto', sans-serif
+
+ul
+    list-style: none
+
+a
+    color: #000
+    text-decoration: none
+
+    
+.movie-card
+    width: 200px
+    margin: 10px
+    position: relative
+    display: flex
+    flex-direction: column
+    &__image
+        width: 100%
+        height: 100%
+        
+    &:hover &__description
+        opacity: 1
+        transition: 0.2s ease all
+
+    &__description
+        opacity: 0
+        position: absolute
+        bottom: 10px
+        background-color: rgba($darkBgColor, 0.8)
+        padding: 10px 0
+        transition: 0.2s ease all
+
+    &__title
+        color: $lightFontColor
+        text-align: center
+        font-size: 1.6rem
+        font-weight: normal
+    &__text
+        text-align: center
+        color: rgba($lightFontColor, 0.5)
+        font-size: 1.3rem
+    &__release-date
+        text-align: center
+        display: block
+        color: $firstColor
+        font-size: 1.1rem
+.App
+    min-height: 80vh
+.movie-list
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+.main-footer
+    height: 20vh
+    background-color: $darkBgColor
+    position: relative
+    &__link
+        display: inline-block
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        text-transform: uppercase
+        color: rgba($lightFontColor, 0.7)
+        transition: 0.2s ease all
+        &:hover
+            transition: 0.2s ease all
+            color: $lightFontColor
+
+.loading
+    display: inline-block
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    font-size: 3rem
+    color: $firstColor
+  
+
+.movie-page
+    min-height: 60vh
+    position: relative
+    top: 10px
+    background-size: cover
+    margin: 0 100px
+    padding: 0 0 30px 0px
+    display: flex
+    flex-direction: column
+    align-items: center
+    box-shadow: 0 14px 28px rgba(0,0,0,0.4), 0 10px 10px rgba(0,0,0,0.4)
+    &__mask
+        position: absolute
+        width: 100%
+        height: 100%
+        background-color: rgba(#000, 0.9)
+    &__right-side
+        position: relative
+    &__left-side
+        position: relative
+        min-width: 200px
+    &__title
+        color: $lightFontColor
+        font-weight: normal
+        margin-top: 60px
+    &__image
+        position: relative
+        top: 30px
+        box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.3), 1px 1px 5px rgba(255, 255, 255, 0.7)    
+    &__description
+        margin-top: 30px
+        color: rgba($lightFontColor, 0.4)
+        margin-top: 30px
+        position: relative
+        width: 700px
+        p
+            margin-top: 7px
+            border-bottom: 1px dashed rgba($lightFontColor, 0.6)
+            padding-bottom: 3px
+            width: 100%
+
+    &__overview
+        width: 60%
+    &__vote
+        font-size: 3rem
+        margin-right: 7px
+        margin-top: 20px
+    &__point
+        color: rgba($firstColor, 0.9)
+        font-weight: bold
+        display: inline-block
+        margin-right: 5px
+    &__rate
+        position: absolute
+        top: 305px
+        right: 0px
+        font-weight: bold
+    

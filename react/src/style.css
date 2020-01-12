@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.movie-card {
+  width: 200px;
+  margin: 10px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.movie-card__image {
+  width: 100%;
+  height: 100%;
+}
+
+.movie-card:hover .movie-card__description {
+  opacity: 1;
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+
+.movie-card__description {
+  opacity: 0;
+  position: absolute;
+  bottom: 10px;
+  background-color: rgba(30, 30, 30, 0.8);
+  padding: 10px 0;
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+
+.movie-card__title {
+  color: #dddddd;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
+.movie-card__text {
+  text-align: center;
+  color: rgba(221, 221, 221, 0.5);
+  font-size: 1.3rem;
+}
+
+.movie-card__release-date {
+  text-align: center;
+  display: block;
+  color: #FDCA00;
+  font-size: 1.1rem;
+}
+
+.App {
+  min-height: 80vh;
+}
+
+.movie-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-footer {
+  height: 20vh;
+  background-color: #1E1E1E;
+  position: relative;
+}
+
+.main-footer__link {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  color: rgba(221, 221, 221, 0.7);
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+
+.main-footer__link:hover {
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+  color: #dddddd;
+}
+
+.loading {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: #FDCA00;
+}
+
+.movie-page {
+  min-height: 60vh;
+  position: relative;
+  top: 10px;
+  background-size: cover;
+  margin: 0 100px;
+  padding: 0 0 30px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.4), 0 10px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.4), 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.movie-page__mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.movie-page__right-side {
+  position: relative;
+}
+
+.movie-page__left-side {
+  position: relative;
+  min-width: 200px;
+}
+
+.movie-page__title {
+  color: #dddddd;
+  font-weight: normal;
+  margin-top: 60px;
+}
+
+.movie-page__image {
+  position: relative;
+  top: 30px;
+  -webkit-box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.3), 1px 1px 5px rgba(255, 255, 255, 0.7);
+          box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.3), 1px 1px 5px rgba(255, 255, 255, 0.7);
+}
+
+.movie-page__description {
+  margin-top: 30px;
+  color: rgba(221, 221, 221, 0.4);
+  margin-top: 30px;
+  position: relative;
+  width: 700px;
+}
+
+.movie-page__description p {
+  margin-top: 7px;
+  border-bottom: 1px dashed rgba(221, 221, 221, 0.6);
+  padding-bottom: 3px;
+  width: 100%;
+}
+
+.movie-page__overview {
+  width: 60%;
+}
+
+.movie-page__vote {
+  font-size: 3rem;
+  margin-right: 7px;
+  margin-top: 20px;
+}
+
+.movie-page__point {
+  color: rgba(253, 202, 0, 0.9);
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.movie-page__rate {
+  position: absolute;
+  top: 305px;
+  right: 0px;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */
